@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { PERMISSIONS, request, RESULTS } from 'react-native-permissions';
 import {launchCamera} from 'react-native-image-picker';
+import Locations from './locations/Locations';
 
 
 const DatosUsuario =()=>{
@@ -57,8 +58,8 @@ const DatosUsuario =()=>{
                 <Image style={styles.imagen} source={{ uri: piker.uri }} />
                 }
             </View>
-            <Locations />
             <Button title='Tomar Foto' onPress={()=> verifyPermission()}/>
+            <Locations />
         </View>
     )
 }
