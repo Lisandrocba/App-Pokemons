@@ -9,8 +9,8 @@ const AppNavigation =()=>{
 
     return(
         <NavigationContainer>
-            {/* {isAuth ? <AppHome /> : <Autenticacion />} */}
-            <AppHome />
+            {isAuth ? <AppHome /> : <Autenticacion />}
+            
         </NavigationContainer>
         )
 }

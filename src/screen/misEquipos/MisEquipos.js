@@ -23,7 +23,7 @@ const MisEquipos =()=>{
                         <Image style={{width: 60, height: 60}} source={{uri: equi[4].image}} />
                     </View>
                 )
-                   // <RenderEquipos equipo = {equi}  key={equi.id}/>
+                   
 
                     )
             }

@@ -14,7 +14,7 @@ const Locations =()=>{
 
     const obtenerUbicacion =()=>{
         Geolocation.getCurrentPosition(info=>{
-            console.warn(info);
+            
             const {latitude, longitude} = info.coords;
             const location = {
                 latitude: latitude,
@@ -41,7 +41,7 @@ const Locations =()=>{
         )
     }
 
-    console.warn(piked)
+    
     const mapPreviewUrl = piked ? `https://maps.googleapis.com/maps/api/staticmap?center=${piked.latitude},${piked.longitude}&size=600x300&maptype=roadmap
     &markers=color:blue%7Clabel:S%7C${piked.latitude},${piked.longitude}&key=${MAPS_KEY}`
     :
